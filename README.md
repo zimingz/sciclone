@@ -4,14 +4,22 @@ An R package for inferring the subclonal architecture of tumors
 
 Both the 'sciClone' package and it's 'bmm' dependency can be installed by doing the following:
 
-    #install IRanges from bioconductor
-    source("http://bioconductor.org/biocLite.R")
-    biocLite("IRanges")
-    #install devtools if you don't have it already
-    install.packages("devtools")
-    library(devtools)
-    install_github("genome/bmm")
+    # Install R-3.6.1.pkg use the link below
+    # https://cran.cnr.berkeley.edu/
+
+    # Install IRanges for the R version 3.6.1
+    if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
+    BiocManager::install()
+    # Bioconductor version 3.9 (BiocManager 1.30.4), R 3.6.1 (2019-07-05)
+
+    BiocManager::install(c("IRanges"))
+    BiocManager::install(c("limma"))
+
+    install.packages("devtools") 
+    library(devtools) 
+    install_github("genome/bmm") 
     install_github("genome/sciClone")
+
 
 If you prefer to build the package by hand, follow these steps:
 
