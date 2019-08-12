@@ -35,15 +35,17 @@ IRanges, rgl, RColorBrewer, ggplot2, grid, plotrix, methods, NORMT3, MKmisc, Tea
         R CMD INSTALL sciClone_1.1.0.tar.gz
 
 ## Usage
-- Run sciClone script from the command line:
+Run sciClone script from the command line:
+
         Rscript sciclone_run.R 
-        #ouptut print to the terminal
+        # ouptut print to the terminal
         or 
         R CMD BATCH sciclone_run.R
-        #check the output file saved in the file
+        # check the output file saved in the file
         cat sciclone_run.Rout
 
-- Run within Rstudio       
+- Run within Rstudio:
+
         library(sciClone)
         #read in vaf data from three related tumors
         #format is 5 column, tab delimited: 
