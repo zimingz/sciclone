@@ -37,6 +37,7 @@ IRanges, rgl, RColorBrewer, ggplot2, grid, plotrix, methods, NORMT3, MKmisc, Tea
 ## Usage
 Run sciClone script from the command line:
 
+        # create a R script 'sciclone_run.R' with all the commands
         Rscript sciclone_run.R 
         # ouptut print to the terminal
         or 
