@@ -34,6 +34,21 @@ IRanges, rgl, RColorBrewer, ggplot2, grid, plotrix, methods, NORMT3, MKmisc, Tea
         R CMD build sciclone
         R CMD INSTALL sciClone_1.1.0.tar.gz
 
+    Solution for "Build from source" Error: Permission denied (publickey)
+    https://help.github.com/en/articles/error-permission-denied-publickey
+
+    Solution:
+    Generating a new SSH key and adding it to the ssh-agent:
+    https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+        ssh-keygen
+        eval "$(ssh-agent -s)"
+        ssh-add
+
+    Adding the new SSH key to your GitHub account
+    https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+
+
 ## Usage
 Run sciClone script from the command line:
 
